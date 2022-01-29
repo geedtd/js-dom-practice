@@ -78,3 +78,16 @@ let countBs = (str) => {
 
 console.log(countBs('BBB'));
 
+let countChar = (str, letter) => {
+    let count = 0
+    for (i = 0; i < str.length; i++) {
+        if (str[i] === letter) {
+            count++
+        }
+        // console.log(str[i]);
+        
+    }
+    return `There are ${count} ${letter} characters in this string`
+}
+
+console.log(countChar('how many letter y can be found in this', 'y'));
